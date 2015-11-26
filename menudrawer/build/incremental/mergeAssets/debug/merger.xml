@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="D:\branch_20140928_1029\IMDemo\libraries\menudrawer\assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="D:\branch_20140928_1029\IMDemo\libraries\menudrawer\build-types\debug\assets" />
+    </dataSet>
+
+</merger>
