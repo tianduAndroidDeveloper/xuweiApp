@@ -1,2 +1,3 @@
-# AFramework
-安卓标准框架搭建
+﻿# xuweiApp
+旭薇App开发
+
