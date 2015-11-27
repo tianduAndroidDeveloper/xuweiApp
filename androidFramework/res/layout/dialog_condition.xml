@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" >
+
+    <RadioGroup
+        android:id="@+id/rg_condition"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@color/yellow_light" >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_condition"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="品牌"
+            android:textColor="@drawable/selector_textcolor_condition" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_condition"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="网络制式"
+            android:textColor="@drawable/selector_textcolor_condition" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_condition"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="操作系统"
+            android:textColor="@drawable/selector_textcolor_condition" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_condition"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="价格"
+            android:textColor="@drawable/selector_textcolor_condition" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选条件"
+                android:textColor="@color/white" />
+
+            <com.android.androidframework.ui.view.LabelGroup
+                android:id="@+id/lg_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_condition"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_clean"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_condition"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="清空条件" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_condition"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定筛选" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_condition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_btn"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+</LinearLayout>

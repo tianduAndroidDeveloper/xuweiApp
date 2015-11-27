@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2" >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_category"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="智能手机" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_category"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="手机配件" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_category"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="数码产品" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rb_category"
+            android:button="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="移动积分兑换" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:numColumns="2"
+        android:scrollbarStyle="@null" />
+
+</LinearLayout>
