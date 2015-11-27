@@ -1,7 +1,7 @@
 package com.android.androidframework.ui.home;
 
 import org.androidannotations.annotations.EFragment;
-import com.android.androidframework.R;
+import com.xuwei.app.R;
 
 import android.content.Context;
 import android.os.Bundle;

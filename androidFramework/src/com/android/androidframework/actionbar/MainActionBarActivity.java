@@ -1,7 +1,7 @@
 package com.android.androidframework.actionbar;
 
-import com.android.androidframework.R;
 import com.android.androidframework.utils.Utils;
+import com.xuwei.app.R;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
