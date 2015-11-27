@@ -14,9 +14,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.RadioGroup;
-import com.android.androidframework.R.id;
-import com.android.androidframework.R.layout;
 import com.android.androidframework.ui.view.MyGridView;
+import com.xuwei.app.R.id;
+import com.xuwei.app.R.layout;
 import org.androidannotations.api.SdkVersionHelper;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
@@ -78,8 +78,8 @@ public final class CommodityActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        gv = ((MyGridView) hasViews.findViewById(id.gv));
         rg = ((RadioGroup) hasViews.findViewById(id.rg));
+        gv = ((MyGridView) hasViews.findViewById(id.gv));
         initUI();
     }
 

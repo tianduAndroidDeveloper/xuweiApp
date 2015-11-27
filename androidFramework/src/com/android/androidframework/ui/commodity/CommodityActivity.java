@@ -20,12 +20,12 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
-import com.android.androidframework.R;
 import com.android.androidframework.actionbar.MainActionBarActivity;
 import com.android.androidframework.ui.commodity.ConditionAdapter.Callback;
 import com.android.androidframework.ui.view.LabelGroup;
 import com.android.androidframework.ui.view.MyGridView;
 import com.android.androidframework.utils.Utils;
+import com.xuwei.app.R;
 
 @EActivity(R.layout.activity_commodity)
 public class CommodityActivity extends MainActionBarActivity implements OnClickListener {

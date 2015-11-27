@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.android.androidframework.R;
+import com.xuwei.app.R;
+
 
 public class ConditionAdapter extends BaseAdapter {
 	Context mContext;

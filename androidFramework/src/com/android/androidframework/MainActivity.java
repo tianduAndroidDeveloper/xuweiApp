@@ -8,6 +8,7 @@ import com.android.androidframework.net.RequestAdapter;
 import com.android.androidframework.net.ResponseData;
 
 import android.view.View;
+import com.xuwei.app.R;
 @EActivity(R.layout.activity_main)
 public class MainActivity extends MainActionBarActivity {
 

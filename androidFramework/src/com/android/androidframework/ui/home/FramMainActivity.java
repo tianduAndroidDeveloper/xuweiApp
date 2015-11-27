@@ -18,7 +18,7 @@ import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 import android.widget.Toast;
 
-import com.android.androidframework.R;
+import com.xuwei.app.R;
 import com.android.androidframework.actionbar.MainActionBarActivity;
 
 @EActivity(R.layout.home_main_activity)

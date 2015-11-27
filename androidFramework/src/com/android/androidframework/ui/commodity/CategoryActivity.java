@@ -10,8 +10,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.androidframework.R;
 import com.android.androidframework.actionbar.MainActionBarActivity;
+import com.xuwei.app.R;
 
 @EActivity(R.layout.activity_category)
 public class CategoryActivity extends MainActionBarActivity {

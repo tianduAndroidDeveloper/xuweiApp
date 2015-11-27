@@ -2,8 +2,9 @@ package com.android.androidframework.ui.home;
 
 import org.androidannotations.annotations.EFragment;
 
+import com.xuwei.app.R;
+
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,9 +13,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.android.androidframework.R;
 import com.android.androidframework.ui.commodity.CategoryActivity_;
-import com.android.androidframework.ui.commodity.CommodityActivity;
 import com.android.androidframework.ui.commodity.CommodityActivity_;
 
 @EFragment()
