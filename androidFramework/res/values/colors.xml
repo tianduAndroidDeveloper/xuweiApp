@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <color name="app_bg">#f0f0f0</color>
+   <color name="member_red_solid">#d62432</color>
+	<color name="member_red_2">#ff0014</color>
+	<color name="member_red_3">#e05b65</color>
+	<color name="blue">#00ff00</color>
+</resources>

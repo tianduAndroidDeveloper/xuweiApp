@@ -3,27 +3,24 @@
 //
 
 
-package com.android.androidframework.ui.home;
+package com.android.androidframework.ui.member;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.TabHost;
 import com.xuwei.app.R.layout;
 import org.androidannotations.api.SdkVersionHelper;
 import org.androidannotations.api.view.HasViews;
-import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
-public final class FramMainActivity_
-    extends FramMainActivity
-    implements HasViews, OnViewChangedListener
+public final class MemberCenterActivity_
+    extends MemberCenterActivity
+    implements HasViews
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
@@ -34,12 +31,10 @@ public final class FramMainActivity_
         init_(savedInstanceState);
         super.onCreate(savedInstanceState);
         OnViewChangedNotifier.replaceNotifier(previousNotifier);
-        setContentView(layout.home_main_activity);
+        setContentView(layout.memeber_center_layout);
     }
 
     private void init_(Bundle savedInstanceState) {
-        OnViewChangedNotifier.registerOnViewChangedListener(this);
-        initData();
     }
 
     @Override
@@ -60,12 +55,12 @@ public final class FramMainActivity_
         onViewChangedNotifier_.notifyViewChanged(this);
     }
 
-    public static FramMainActivity_.IntentBuilder_ intent(Context context) {
-        return new FramMainActivity_.IntentBuilder_(context);
+    public static MemberCenterActivity_.IntentBuilder_ intent(Context context) {
+        return new MemberCenterActivity_.IntentBuilder_(context);
     }
 
-    public static FramMainActivity_.IntentBuilder_ intent(Fragment supportFragment) {
-        return new FramMainActivity_.IntentBuilder_(supportFragment);
+    public static MemberCenterActivity_.IntentBuilder_ intent(Fragment supportFragment) {
+        return new MemberCenterActivity_.IntentBuilder_(supportFragment);
     }
 
     @Override
@@ -76,13 +71,6 @@ public final class FramMainActivity_
         return super.onKeyDown(keyCode, event);
     }
 
-    @Override
-    public void onViewChanged(HasViews hasViews) {
-        mainPager = ((ViewPager) hasViews.findViewById(com.xuwei.app.R.id.home_main_pager));
-        tabHost = ((TabHost) hasViews.findViewById(android.R.id.tabhost));
-        initUI();
-    }
-
     public static class IntentBuilder_ {
 
         private Context context_;
@@ -91,20 +79,20 @@ public final class FramMainActivity_
 
         public IntentBuilder_(Context context) {
             context_ = context;
-            intent_ = new Intent(context, FramMainActivity_.class);
+            intent_ = new Intent(context, MemberCenterActivity_.class);
         }
 
         public IntentBuilder_(Fragment fragment) {
             fragmentSupport_ = fragment;
             context_ = fragment.getActivity();
-            intent_ = new Intent(context_, FramMainActivity_.class);
+            intent_ = new Intent(context_, MemberCenterActivity_.class);
         }
 
         public Intent get() {
             return intent_;
         }
 
-        public FramMainActivity_.IntentBuilder_ flags(int flags) {
+        public MemberCenterActivity_.IntentBuilder_ flags(int flags) {
             intent_.setFlags(flags);
             return this;
         }

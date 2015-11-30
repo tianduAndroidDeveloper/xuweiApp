@@ -23,7 +23,7 @@ public class FramFourFragment extends Fragment {
 				parent.removeView(rootView);
 			}
 		} else {
-			rootView = LayoutInflater.from(getActivity()).inflate(R.layout.activity_main, null);
+			rootView = LayoutInflater.from(getActivity()).inflate(R.layout.memeber_center_layout, null);
 			
 			mContext = getActivity();
 			

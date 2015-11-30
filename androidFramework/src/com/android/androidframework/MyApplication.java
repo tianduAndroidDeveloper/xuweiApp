@@ -60,6 +60,7 @@ public class MyApplication extends Application {
 				.threadPriority(Thread.NORM_PRIORITY - 2).memoryCache(new WeakMemoryCache())
 				.denyCacheImageMultipleSizesInMemory().diskCacheFileNameGenerator(new Md5FileNameGenerator())
 				.diskCacheSize(100 * 1024 * 1024)
+				
 				// 100 Mb
 				.diskCacheFileCount(200).diskCache(new UnlimitedDiskCache(meCacheDir))// 自定义缓存路径
 				.tasksProcessingOrder(QueueProcessingType.LIFO).writeDebugLogs() // Remove for

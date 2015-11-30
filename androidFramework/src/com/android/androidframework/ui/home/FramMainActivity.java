@@ -45,6 +45,7 @@ public class FramMainActivity extends MainActionBarActivity {
 		initTabHost();
 		initFragments();
 		begin();
+		
 	}
 
 	void initFragments() {

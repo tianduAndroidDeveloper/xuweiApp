@@ -9,9 +9,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.androidframework.R.id;
-import com.android.androidframework.R.layout;
 import com.android.androidframework.ui.view.BadgeView;
+import com.xuwei.app.R.id;
+import com.xuwei.app.R.layout;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
@@ -91,9 +91,9 @@ public final class MainTabView_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        title = ((TextView) hasViews.findViewById(id.title));
-        badgeView = ((BadgeView) hasViews.findViewById(id.badgeView));
         imageView = ((ImageView) hasViews.findViewById(id.imageView));
+        badgeView = ((BadgeView) hasViews.findViewById(id.badgeView));
+        title = ((TextView) hasViews.findViewById(id.title));
     }
 
 }
