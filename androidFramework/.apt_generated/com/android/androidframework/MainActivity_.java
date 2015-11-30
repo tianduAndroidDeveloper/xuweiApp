@@ -16,10 +16,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import com.xuwei.app.R.layout;
-<<<<<<< HEAD
 import org.androidannotations.api.BackgroundExecutor;
-=======
->>>>>>> d0e2d5f50820c53162ca00e03680135204fa50a5
 import org.androidannotations.api.SdkVersionHelper;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedNotifier;

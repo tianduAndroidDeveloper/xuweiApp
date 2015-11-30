@@ -78,8 +78,8 @@ public final class CommodityActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        rg = ((RadioGroup) hasViews.findViewById(id.rg));
         gv = ((MyGridView) hasViews.findViewById(id.gv));
+        rg = ((RadioGroup) hasViews.findViewById(id.rg));
         initUI();
     }
 
