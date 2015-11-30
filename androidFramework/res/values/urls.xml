@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 根据分类请求对应的筛选条件URL -->
+	<string name="url_loadProductCategoryFilters">/tools/app_api_request.ashx?action=loadProductCategoryFilters</string>
+</resources>

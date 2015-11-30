@@ -26,5 +26,5 @@
         <item name="android:activityCloseEnterAnimation">@anim/back_left_in</item>
         <item name="android:activityCloseExitAnimation">@anim/back_right_out</item>
     </style>
-
+    
 </resources>
