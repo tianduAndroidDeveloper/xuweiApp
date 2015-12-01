@@ -7,15 +7,6 @@ import java.util.Map;
 
 import org.androidannotations.annotations.EFragment;
 
-import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
-
-import com.android.androidframework.R;
-import com.android.androidframework.bean.PhoneBean;
-import com.android.androidframework.utils.CycleViewPager;
-import com.android.androidframework.utils.ImagePagerAdapter;
-import com.android.androidframework.utils.LunboImageUtil;
-import com.nostra13.universalimageloader.core.ImageLoader;
-
 import android.content.Context;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -23,18 +14,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
+
+import com.android.androidframework.bean.PhoneBean;
+import com.android.androidframework.utils.ImagePagerAdapter;
+import com.xuwei.app.R;
 
 @EFragment()
 public class FramOneFragment extends Fragment {
 	View rootView;
 	Context mContext;
-	CycleViewPager cycleViewPager;
 	GridView main_gridview, main_phone_gridview;
 	AutoScrollViewPager viewpager;
 	private AutoScrollViewPager viewPager, viewPager2;

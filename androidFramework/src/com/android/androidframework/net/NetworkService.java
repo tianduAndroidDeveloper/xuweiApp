@@ -1,7 +1,7 @@
 package com.android.androidframework.net;
 
 import com.android.androidframework.MyApplication;
-import com.android.androidframework.R;
+import com.xuwei.app.R;
 
 import android.app.AlertDialog;
 import android.content.ComponentName;

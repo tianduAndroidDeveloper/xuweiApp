@@ -5,7 +5,7 @@ import java.io.File;
 import android.os.Environment;
 
 public class Config {
-	private static String serverHost;
+	private static String serverHost = "http://xw.ynyes.net";
 	private static String mLocalDir = Environment.getExternalStorageDirectory().getPath();
 
 	public static String getServerHost() {

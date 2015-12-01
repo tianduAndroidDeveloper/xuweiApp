@@ -10,6 +10,7 @@
         <!-- <item name="android:windowFullscreen">true</item> -->
         <!-- 隐藏标题栏 -->
         <item name="android:windowNoTitle">true</item>
+       
         <!-- 设置activity切换动画 -->
         <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
     </style>
@@ -25,5 +26,5 @@
         <item name="android:activityCloseEnterAnimation">@anim/back_left_in</item>
         <item name="android:activityCloseExitAnimation">@anim/back_right_out</item>
     </style>
-
+    
 </resources>

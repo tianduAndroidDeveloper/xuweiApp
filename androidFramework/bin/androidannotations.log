@@ -2692,3 +2692,142 @@
 14:57:22.304 [Worker-58] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
 14:57:27.428 [Worker-62] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
 14:57:43.103 [Worker-40] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:04:02.133 [Worker-65] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:04:02.135 [Worker-65] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 11 annotations on 52 elements
+15:04:02.160 [Worker-65] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:04:02.163 [Worker-65] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:04:02.163 [Worker-65] ERROR o.a.r.ProjectRClassFinder:46 - The generated com.xuwei.app.R class cannot be found
+15:04:02.163 [Worker-65] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:04:02.169 [Worker-65] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 34 ms], [Extract Annotations = 25 ms], [Extract Manifest = 3 ms], 
+15:04:02.170 [Worker-65] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:04:48.852 [Worker-72] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:04:48.853 [Worker-72] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 11 annotations on 54 elements
+15:04:48.872 [Worker-72] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:04:48.874 [Worker-72] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:04:48.875 [Worker-72] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:04:48.918 [Worker-72] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:04:48.921 [Worker-72] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:04:48.922 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with EApplicationHandler: [com.android.androidframework.MyApplication]
+15:04:48.922 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with EActivityHandler: [com.android.androidframework.ui.member.MyIntegrateActivity, com.android.androidframework.ui.member.MemberCenterActivity, com.android.androidframework.ui.commodity.CategoryActivity, com.android.androidframework.ui.member.order.OrderActivity, com.android.androidframework.ui.commodity.CommodityActivity, com.android.androidframework.ui.commodity.ConditionDialog, com.android.androidframework.MainActivity, com.android.androidframework.ui.home.FramMainActivity]
+15:04:48.923 [Worker-72] WARN  o.a.h.AnnotationHelper:110 - The component MainActivity_ is not registered in the AndroidManifest.xml file.
+15:04:48.924 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramThreeFragment, com.android.androidframework.ui.home.FramTwoFragment, com.android.androidframework.ui.member.order.ChildFragment, com.android.androidframework.ui.home.FramFourFragment]
+15:04:48.924 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with EViewGroupHandler: [com.android.androidframework.ui.home.MainTabView]
+15:04:48.925 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with ViewByIdHandler: [tabHost, title, imageView, badgeView, gv, lv_condition, mainPager, rg_condition, rg]
+15:04:48.926 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with ClickHandler: [void priceSort() , void timeSort() , void conditionSort() , void sellSort() ]
+15:04:48.928 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with ExtraHandler: [category_id, json, type]
+15:04:48.929 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with AfterInjectHandler: [void initData() , void initData() , void initData() , void initData() ]
+15:04:48.929 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with AfterViewsHandler: [void initUI() , void initUI() , void initUi() , void initUI() , void initUI() , void initUI() ]
+15:04:48.930 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with UiThreadHandler: [public void uit() ]
+15:04:48.930 [Worker-72] DEBUG o.a.p.ModelValidator:62 - Validating with BackgroundHandler: [public void bag() ]
+15:04:48.931 [Worker-72] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:04:48.931 [Worker-72] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EApplicationHandler: [com.android.androidframework.MyApplication]
+15:04:48.931 [Worker-72] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EActivityHandler: [com.android.androidframework.ui.member.MyIntegrateActivity, com.android.androidframework.ui.member.MemberCenterActivity, com.android.androidframework.ui.commodity.CategoryActivity, com.android.androidframework.ui.member.order.OrderActivity, com.android.androidframework.ui.commodity.CommodityActivity, com.android.androidframework.ui.commodity.ConditionDialog, com.android.androidframework.MainActivity, com.android.androidframework.ui.home.FramMainActivity]
+15:04:48.938 [Worker-72] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramThreeFragment, com.android.androidframework.ui.home.FramTwoFragment, com.android.androidframework.ui.member.order.ChildFragment, com.android.androidframework.ui.home.FramFourFragment]
+15:04:48.939 [Worker-72] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EViewGroupHandler: [com.android.androidframework.ui.home.MainTabView]
+15:04:48.940 [Worker-72] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:04:48.940 [Worker-72] DEBUG o.a.p.ModelProcessor:116 - Processing enclosed elements with ViewByIdHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@4ac81a, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@559366, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1c31e4f, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@b4f3ea]
+15:04:48.941 [Worker-72] DEBUG o.a.p.ModelProcessor:116 - Processing enclosed elements with ClickHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@2d49ed, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1c6e16c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@a08b1, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@b9ac15]
+15:04:48.943 [Worker-72] DEBUG o.a.p.ModelProcessor:116 - Processing enclosed elements with ExtraHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1a5a7c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@bab392, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@957eb9]
+15:04:48.946 [Worker-72] DEBUG o.a.p.ModelProcessor:116 - Processing enclosed elements with AfterInjectHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@e577d3, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@157a04c, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@677b4b]
+15:04:48.947 [Worker-72] DEBUG o.a.p.ModelProcessor:116 - Processing enclosed elements with AfterViewsHandler: [org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@1d79386, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@266fa4, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6b6028, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@10d0900, org.androidannotations.model.AnnotationElements$AnnotatedAndRootElements@6b9a34]
+15:04:48.951 [Worker-72] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 14
+15:04:48.951 [Worker-72] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:04:48.952 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.member.order.ChildFragment_
+15:04:48.954 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.member.order.OrderActivity_
+15:04:48.957 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramFourFragment_
+15:04:48.960 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramMainActivity_
+15:04:48.962 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramThreeFragment_
+15:04:48.963 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramTwoFragment_
+15:04:48.965 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.MainTabView_
+15:04:48.967 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.MainActivity_
+15:04:48.969 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.MyApplication_
+15:04:48.970 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.commodity.CategoryActivity_
+15:04:48.971 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.commodity.CommodityActivity_
+15:04:48.980 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.commodity.ConditionDialog_
+15:04:48.984 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.member.MemberCenterActivity_
+15:04:48.986 [Worker-72] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.member.MyIntegrateActivity_
+15:04:48.987 [Worker-72] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 134 ms], [Find R Classes = 46 ms], [Generate Sources = 36 ms], [Process Annotations = 21 ms], [Extract Annotations = 18 ms], [Validate Annotations = 9 ms], [Extract Manifest = 2 ms], 
+15:04:48.987 [Worker-72] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:04:49.657 [Worker-69] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:05:19.575 [Worker-68] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:05:19.577 [Worker-68] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 1 annotations on 3 elements
+15:05:19.581 [Worker-68] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:05:19.584 [Worker-68] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:05:19.584 [Worker-68] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:05:19.589 [Worker-68] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:05:19.591 [Worker-68] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:05:19.592 [Worker-68] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:05:19.593 [Worker-68] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:05:19.594 [Worker-68] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:05:19.594 [Worker-68] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:05:19.594 [Worker-68] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+15:05:19.595 [Worker-68] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:05:19.595 [Worker-68] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramOneFragment_
+15:05:19.598 [Worker-68] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 21 ms], [Find R Classes = 7 ms], [Extract Annotations = 4 ms], [Generate Sources = 4 ms], [Extract Manifest = 3 ms], [Validate Annotations = 2 ms], [Process Annotations = 1 ms], 
+15:05:19.598 [Worker-68] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:05:24.846 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:05:24.847 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 1 annotations on 3 elements
+15:05:24.851 [Worker-73] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:05:24.854 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:05:24.855 [Worker-73] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:05:24.858 [Worker-73] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:05:24.861 [Worker-73] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:05:24.861 [Worker-73] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:05:24.863 [Worker-73] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:05:24.863 [Worker-73] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:05:24.864 [Worker-73] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:05:24.865 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+15:05:24.865 [Worker-73] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:05:24.865 [Worker-73] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramOneFragment_
+15:05:24.866 [Worker-73] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 19 ms], [Find R Classes = 6 ms], [Extract Annotations = 4 ms], [Extract Manifest = 3 ms], [Validate Annotations = 2 ms], [Process Annotations = 2 ms], [Generate Sources = 1 ms], 
+15:05:24.867 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:05:52.335 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:06:10.542 [Worker-71] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:06:10.543 [Worker-71] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 1 annotations on 2 elements
+15:06:10.550 [Worker-71] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:06:10.554 [Worker-71] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:06:10.554 [Worker-71] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:06:10.559 [Worker-71] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:06:10.564 [Worker-71] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:06:10.564 [Worker-71] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:10.566 [Worker-71] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:06:10.567 [Worker-71] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:10.567 [Worker-71] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:06:10.568 [Worker-71] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+15:06:10.568 [Worker-71] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:06:10.568 [Worker-71] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramOneFragment_
+15:06:10.571 [Worker-71] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 28 ms], [Find R Classes = 10 ms], [Extract Annotations = 5 ms], [Extract Manifest = 5 ms], [Generate Sources = 3 ms], [Validate Annotations = 2 ms], [Process Annotations = 2 ms], 
+15:06:10.572 [Worker-71] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:06:39.702 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:06:39.703 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 1 annotations on 3 elements
+15:06:39.710 [Worker-73] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:06:39.712 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:06:39.713 [Worker-73] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:06:39.718 [Worker-73] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:06:39.722 [Worker-73] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:06:39.723 [Worker-73] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:39.725 [Worker-73] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:06:39.726 [Worker-73] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:39.728 [Worker-73] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:06:39.728 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+15:06:39.729 [Worker-73] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:06:39.729 [Worker-73] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramOneFragment_
+15:06:39.731 [Worker-73] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 28 ms], [Find R Classes = 9 ms], [Extract Annotations = 5 ms], [Extract Manifest = 3 ms], [Validate Annotations = 3 ms], [Process Annotations = 3 ms], [Generate Sources = 3 ms], 
+15:06:39.731 [Worker-73] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:06:42.130 [Worker-70] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}
+15:06:42.131 [Worker-70] INFO  o.a.AndroidAnnotationProcessor:109 - Start processing for 1 annotations on 1 elements
+15:06:42.137 [Worker-70] DEBUG o.a.h.AndroidManifestFinder:137 - AndroidManifest.xml file found in parent folder D:\androidWorkSpace\xuwei\xuweiApp\androidFramework: D:\androidWorkSpace\xuwei\xuweiApp\androidFramework\AndroidManifest.xml
+15:06:42.141 [Worker-70] INFO  o.a.AndroidAnnotationProcessor:172 - AndroidManifest.xml found: AndroidManifest [applicationPackage=com.xuwei.app, componentQualifiedNames=[com.android.androidframework.ui.home.FramMainActivity_, com.android.androidframework.ui.member.MemberCenterActivity_, com.android.androidframework.ui.member.order.OrderActivity_, com.android.androidframework.ui.member.MyIntegrateActivity_, com.android.androidframework.ui.commodity.CommodityActivity_, com.android.androidframework.ui.commodity.CategoryActivity_, com.android.androidframework.ui.commodity.ConditionDialog_], permissionQualifiedNames=[android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_PHONE_STATE], applicationClassName=com.android.androidframework.MyApplication_, libraryProject=false, debugabble=false, minSdkVersion=8, maxSdkVersion=-1, targetSdkVersion=18]
+15:06:42.142 [Worker-70] INFO  o.a.r.ProjectRClassFinder:50 - Found project R class: com.xuwei.app.R
+15:06:42.145 [Worker-70] INFO  o.a.r.AndroidRClassFinder:44 - Found Android class: android.R
+15:06:42.149 [Worker-70] INFO  o.a.p.ModelValidator:42 - Validating elements
+15:06:42.149 [Worker-70] DEBUG o.a.p.ModelValidator:62 - Validating with EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:42.150 [Worker-70] INFO  o.a.p.ModelProcessor:73 - Processing root elements
+15:06:42.151 [Worker-70] DEBUG o.a.p.ModelProcessor:80 - Processing root elements EFragmentHandler: [com.android.androidframework.ui.home.FramOneFragment]
+15:06:42.151 [Worker-70] INFO  o.a.p.ModelProcessor:104 - Processing enclosed elements
+15:06:42.152 [Worker-70] INFO  o.a.AndroidAnnotationProcessor:251 - Number of files generated by AndroidAnnotations: 1
+15:06:42.152 [Worker-70] INFO  o.a.g.ApiCodeGenerator:52 - Writting following API classes in project: []
+15:06:42.152 [Worker-70] DEBUG o.a.g.SourceCodewriter:55 - Generating class: com.android.androidframework.ui.home.FramOneFragment_
+15:06:42.156 [Worker-70] INFO  o.a.p.TimeStats:81 - Time measurements: [Whole Processing = 25 ms], [Find R Classes = 7 ms], [Extract Annotations = 5 ms], [Extract Manifest = 4 ms], [Generate Sources = 4 ms], [Process Annotations = 2 ms], [Validate Annotations = 1 ms], 
+15:06:42.157 [Worker-70] INFO  o.a.AndroidAnnotationProcessor:123 - Finish processing
+15:13:05.405 [Worker-74] INFO  o.a.AndroidAnnotationProcessor:85 - Initialize AndroidAnnotations 3.0.1 with options {phase=BUILD}

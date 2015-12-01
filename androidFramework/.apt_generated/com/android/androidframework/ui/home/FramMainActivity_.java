@@ -15,7 +15,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.TabHost;
-import com.android.androidframework.R.layout;
+import com.xuwei.app.R.layout;
 import org.androidannotations.api.SdkVersionHelper;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
@@ -79,7 +79,7 @@ public final class FramMainActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         tabHost = ((TabHost) hasViews.findViewById(android.R.id.tabhost));
-        mainPager = ((ViewPager) hasViews.findViewById(com.android.androidframework.R.id.home_main_pager));
+        mainPager = ((ViewPager) hasViews.findViewById(com.xuwei.app.R.id.home_main_pager));
         initUI();
     }
 

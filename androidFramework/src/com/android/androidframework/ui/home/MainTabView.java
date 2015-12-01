@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.android.androidframework.R;  
+import com.xuwei.app.R;  
 
 @EViewGroup(R.layout.main_tab_view)
 public class MainTabView extends LinearLayout{

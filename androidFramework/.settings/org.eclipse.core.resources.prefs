@@ -1,6 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=9d3c7707793c6ff17b7d4f996bb7303d24136130
 eclipse.preferences.version=1
 encoding//src/com/android/androidframework/LocalPath.java=UTF-8
 encoding//src/com/android/androidframework/net=UTF-8
 encoding//src/com/android/androidframework/net/NetworkService.java=UTF-8
-encoding//src/com/android/androidframework/utils/CycleViewPager.java=UTF-8
-encoding//src/com/android/androidframework/utils/LunboImageUtil.java=UTF-8
+encoding//src/com/android/androidframework/ui/view/LabelGroup.java=UTF-8
