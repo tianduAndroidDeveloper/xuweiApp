@@ -29,7 +29,7 @@ import com.xuwei.app.R;
 public class FramOneFragment extends Fragment {
 	View rootView;
 	Context mContext;
-	GridView main_gridview, main_phone_gridview;
+	GridView main_gridview, main_phone_gridview,main_phone2_gridview;
 	AutoScrollViewPager viewpager;
 	private AutoScrollViewPager viewPager, viewPager2;
 	private List<Integer> imageIdList, imageIdList2;
@@ -60,13 +60,15 @@ public class FramOneFragment extends Fragment {
 	private void setGridView() {
 		main_phone_gridview = (GridView) rootView.findViewById(R.id.main_phone_gridview);
 		main_phone_gridview.setAdapter(new GridviewAdapter(null));
-
+		
+		
+		main_phone2_gridview=(GridView) rootView.findViewById(R.id.main_phone2_gridview);
+		main_phone2_gridview.setAdapter(new GridviewAdapter2(null));
 	}
 
 	class GridviewAdapter extends BaseAdapter {
 		List<PhoneBean> phoneList = null;
 		LayoutInflater infalter;
-
 		public GridviewAdapter(List<PhoneBean> phoneList) {
 			this.phoneList = phoneList;
 			infalter = LayoutInflater.from(mContext);
@@ -92,6 +94,63 @@ public class FramOneFragment extends Fragment {
 			ViewHolder holder;
 			if (convertView == null) {
 				convertView = infalter.inflate(R.layout.main_phone__grid_item, null);
+				holder = new ViewHolder();
+				holder.name = (TextView) convertView.findViewById(R.id.product_name);
+				holder.price = (TextView) convertView.findViewById(R.id.product_price);
+				holder.image = (ImageView) convertView.findViewById(R.id.phone_image);
+				holder.tag = (ImageView) convertView.findViewById(R.id.image_tag);
+				holder.market_price = (TextView) convertView.findViewById(R.id.product_market_price);
+				convertView.setTag(holder);
+			} else {
+				holder = (ViewHolder) convertView.getTag();
+			}
+			holder.market_price.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+			// holder.name.setText(phoneList.get(position).name);
+			// holder.price.setText(phoneList.get(position).price);
+			// ImageLoader.getInstance().displayImage(uri, holder.image);
+			return convertView;
+		}
+
+		class ViewHolder {
+			TextView name;
+			TextView price;
+			ImageView image;
+			ImageView tag;
+			TextView market_price;
+		}
+
+	}
+	
+	//-----------------------------------------------------------
+	
+	class GridviewAdapter2 extends BaseAdapter {
+		List<PhoneBean> phoneList = null;
+		LayoutInflater infalter;
+		public GridviewAdapter2(List<PhoneBean> phoneList) {
+			this.phoneList = phoneList;
+			infalter = LayoutInflater.from(mContext);
+		}
+
+		@Override
+		public int getCount() {
+			return 4;
+		}
+
+		@Override
+		public Object getItem(int position) {
+			return getItem(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return position;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			ViewHolder holder;
+			if (convertView == null) {
+				convertView = infalter.inflate(R.layout.main_phone2_gritview_item, null);
 				holder = new ViewHolder();
 				holder.name = (TextView) convertView.findViewById(R.id.product_name);
 				holder.price = (TextView) convertView.findViewById(R.id.product_price);

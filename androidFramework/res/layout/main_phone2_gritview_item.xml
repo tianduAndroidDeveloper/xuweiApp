@@ -2,7 +2,77 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:gravity="center"
+    >
     
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content" >
 
+        <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/proimg2_04" />
+
+        <TextView
+            android:layout_below="@id/phone_image"
+            android:id="@+id/product_name"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iphone 6s(1700) 银色" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_below="@id/product_name"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/orange"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="国行银色16GB苹果6S" />
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_price"
+            android:textSize="10sp"
+            android:textColor="@color/red"
+            android:layout_below="@id/product_description"
+            android:text="￥3555.0"/>
+        <TextView 
+            android:id="@+id/product_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_price"
+            android:layout_below="@+id/product_description"
+            android:text="￥9999.0"
+            android:layout_alignBaseline="@id/product_price"
+            android:textColor="#222222"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_below="@id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_bg_bc"
+            android:text="新品特价"
+            android:textSize="10sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:src="@drawable/hot_tag" />
+    </RelativeLayout>
 </LinearLayout>
