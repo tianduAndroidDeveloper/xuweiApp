@@ -78,8 +78,8 @@ public final class FramMainActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        mainPager = ((ViewPager) hasViews.findViewById(com.xuwei.app.R.id.home_main_pager));
         tabHost = ((TabHost) hasViews.findViewById(android.R.id.tabhost));
+        mainPager = ((ViewPager) hasViews.findViewById(com.xuwei.app.R.id.home_main_pager));
         initUI();
     }
 
