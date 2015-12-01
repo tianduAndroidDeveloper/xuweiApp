@@ -19,6 +19,7 @@
         <TextView
             android:layout_toRightOf="@id/phone_image"
             android:id="@+id/product_name"
+            android:singleLine="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="iphone 6s(1700) 银色" />
@@ -28,6 +29,8 @@
             android:layout_toRightOf="@id/phone_image"
             android:layout_below="@id/product_name"
             android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/orange"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:text="国行银色16GB苹果6S" />
@@ -37,6 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/product_price"
+            android:textSize="10sp"
+            android:textColor="@color/red"
             android:layout_below="@id/product_description"
             android:text="￥3555.0"/>
         <TextView 
@@ -56,6 +61,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/tv_bg_bc"
             android:text="新品特价"
+            android:textSize="10sp"
             android:textColor="@color/white" />
 
         <ImageView
@@ -67,11 +73,5 @@
             android:src="@drawable/hot_tag" />
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/line_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-    </LinearLayout>
 
 </LinearLayout>

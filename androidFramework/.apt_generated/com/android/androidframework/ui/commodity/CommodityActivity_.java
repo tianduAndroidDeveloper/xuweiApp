@@ -86,21 +86,6 @@ public final class CommodityActivity_
         progress = ((View) hasViews.findViewById(id.progress));
         gv = ((MyGridView) hasViews.findViewById(id.gv));
         {
-            View view = hasViews.findViewById(id.rb_condition);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.conditionSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
             View view = hasViews.findViewById(id.rb_sell);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
@@ -139,6 +124,21 @@ public final class CommodityActivity_
                     @Override
                     public void onClick(View view) {
                         CommodityActivity_.this.timeSort();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(id.rb_condition);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        CommodityActivity_.this.conditionSort();
                     }
 
                 }

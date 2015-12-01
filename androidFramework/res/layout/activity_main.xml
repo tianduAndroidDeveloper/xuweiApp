@@ -378,6 +378,76 @@
             android:verticalSpacing="1dp"
             android:numColumns="2"
             android:stretchMode="columnWidth" />
+        
+        
+         <LinearLayout
+            android:id="@+id/more_hot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/liner_bg_bc"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/smallicon_08"
+                android:text="智能配件" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="100dp"
+                android:text="数据线    移动电源   内存卡   更多" />
+        </LinearLayout>
+        
+         
+         
+         <!-- -智能配件- -->
+         
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="2dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inproimgs_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Iphone 6s(1700A)银色" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="￥ 5600"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+            
+            <GridView android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:id="@+id/main_phone2_gridview"
+                android:layout_weight="2"/>
+            </LinearLayout>
+         
     </LinearLayout>
 
 </ScrollView>
