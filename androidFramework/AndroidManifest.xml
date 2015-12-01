@@ -60,6 +60,22 @@
             android:name="com.android.androidframework.ui.commodity.ConditionDialog_"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.android.androidframework.ui.member.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.member.FindPswActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.member.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.commodity.CommodityDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
     </application>
 
 </manifest>

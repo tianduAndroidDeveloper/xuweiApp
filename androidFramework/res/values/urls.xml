@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- 根据分类请求对应的筛选条件URL -->
-	<string name="url_loadProductCategoryFilters">/tools/app_api_request.ashx?action=loadProductCategoryFilters</string>
-	<string name="url_loadProductsPageData">/tools/app_api_request.ashx?action=loadProductsPageData</string>
-	<string name="url_get_image">http://xw.ynyes.net</string>
+
+    <!-- 根据分类请求对应的筛选条件URL -->
+    <string name="url_loadProductCategoryFilters">/tools/app_api_request.ashx?action=loadProductCategoryFilters</string>
+    <string name="url_loadProductsPageData">/tools/app_api_request.ashx?action=loadProductsPageData</string>
+    <string name="url_loadProductCategorys">/tools/app_api_request.ashx?action=loadProductCategorys</string>
+    <string name="url_get_image">http://xw.ynyes.net</string>
+
 </resources>

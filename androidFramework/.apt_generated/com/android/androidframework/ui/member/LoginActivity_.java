@@ -3,7 +3,7 @@
 //
 
 
-package com.android.androidframework.ui.commodity;
+package com.android.androidframework.ui.member;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,8 +14,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.RadioGroup;
-import com.android.androidframework.ui.view.MyGridView;
 import com.xuwei.app.R.id;
 import com.xuwei.app.R.layout;
 import org.androidannotations.api.SdkVersionHelper;
@@ -23,13 +21,12 @@ import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
-public final class CommodityActivity_
-    extends CommodityActivity
+public final class LoginActivity_
+    extends LoginActivity
     implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
-    public final static String CATEGORY_ID_EXTRA = "category_id";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,13 +34,11 @@ public final class CommodityActivity_
         init_(savedInstanceState);
         super.onCreate(savedInstanceState);
         OnViewChangedNotifier.replaceNotifier(previousNotifier);
-        setContentView(layout.activity_commodity);
+        setContentView(layout.activity_login);
     }
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
-        injectExtras_();
-        initData();
     }
 
     @Override
@@ -64,12 +59,12 @@ public final class CommodityActivity_
         onViewChangedNotifier_.notifyViewChanged(this);
     }
 
-    public static CommodityActivity_.IntentBuilder_ intent(Context context) {
-        return new CommodityActivity_.IntentBuilder_(context);
+    public static LoginActivity_.IntentBuilder_ intent(Context context) {
+        return new LoginActivity_.IntentBuilder_(context);
     }
 
-    public static CommodityActivity_.IntentBuilder_ intent(Fragment supportFragment) {
-        return new CommodityActivity_.IntentBuilder_(supportFragment);
+    public static LoginActivity_.IntentBuilder_ intent(Fragment supportFragment) {
+        return new LoginActivity_.IntentBuilder_(supportFragment);
     }
 
     @Override
@@ -82,18 +77,15 @@ public final class CommodityActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        gv = ((MyGridView) hasViews.findViewById(id.gv));
-        progress = ((View) hasViews.findViewById(id.progress));
-        rg = ((RadioGroup) hasViews.findViewById(id.rg));
         {
-            View view = hasViews.findViewById(id.rb_price);
+            View view = hasViews.findViewById(id.tv_register);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
 
 
                     @Override
                     public void onClick(View view) {
-                        CommodityActivity_.this.priceSort();
+                        LoginActivity_.this.register();
                     }
 
                 }
@@ -101,44 +93,14 @@ public final class CommodityActivity_
             }
         }
         {
-            View view = hasViews.findViewById(id.rb_sell);
+            View view = hasViews.findViewById(id.tv_find);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
 
 
                     @Override
                     public void onClick(View view) {
-                        CommodityActivity_.this.sellSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_time);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.timeSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_condition);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.conditionSort();
+                        LoginActivity_.this.find();
                     }
 
                 }
@@ -146,21 +108,6 @@ public final class CommodityActivity_
             }
         }
         initUI();
-    }
-
-    private void injectExtras_() {
-        Bundle extras_ = getIntent().getExtras();
-        if (extras_!= null) {
-            if (extras_.containsKey(CATEGORY_ID_EXTRA)) {
-                category_id = extras_.getString(CATEGORY_ID_EXTRA);
-            }
-        }
-    }
-
-    @Override
-    public void setIntent(Intent newIntent) {
-        super.setIntent(newIntent);
-        injectExtras_();
     }
 
     public static class IntentBuilder_ {
@@ -171,20 +118,20 @@ public final class CommodityActivity_
 
         public IntentBuilder_(Context context) {
             context_ = context;
-            intent_ = new Intent(context, CommodityActivity_.class);
+            intent_ = new Intent(context, LoginActivity_.class);
         }
 
         public IntentBuilder_(Fragment fragment) {
             fragmentSupport_ = fragment;
             context_ = fragment.getActivity();
-            intent_ = new Intent(context_, CommodityActivity_.class);
+            intent_ = new Intent(context_, LoginActivity_.class);
         }
 
         public Intent get() {
             return intent_;
         }
 
-        public CommodityActivity_.IntentBuilder_ flags(int flags) {
+        public LoginActivity_.IntentBuilder_ flags(int flags) {
             intent_.setFlags(flags);
             return this;
         }
@@ -203,11 +150,6 @@ public final class CommodityActivity_
                     context_.startActivity(intent_);
                 }
             }
-        }
-
-        public CommodityActivity_.IntentBuilder_ category_id(String category_id) {
-            intent_.putExtra(CATEGORY_ID_EXTRA, category_id);
-            return this;
         }
 
     }
