@@ -7,9 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name="com.android.androidframework.MyApplication_"
@@ -29,33 +30,36 @@
             </intent-filter>
         </activity>
 
-        
         <!-- 会员中心Activity -->
-        <activity 
+        <activity
             android:name="com.android.androidframework.ui.member.MemberCenterActivity_"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
-         <activity 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
             android:name="com.android.androidframework.ui.member.order.OrderActivity_"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            android:theme="@style/Theme_Activity_Animation"></activity>
-          <activity 
+            android:theme="@style/Theme_Activity_Animation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
             android:name="com.android.androidframework.ui.member.MyIntegrateActivity_"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            android:theme="@style/Theme_Activity_Animation"></activity>
-
-        <activity android:name="com.android.androidframework.ui.commodity.CommodityActivity_"
+            android:theme="@style/Theme_Activity_Animation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.android.androidframework.ui.commodity.CommodityActivity_"
             android:screenOrientation="portrait"
             android:theme="@style/Theme_Activity_Animation" />
-        <activity android:name="com.android.androidframework.ui.commodity.CategoryActivity_"
+        <activity
+            android:name="com.android.androidframework.ui.commodity.CategoryActivity_"
             android:screenOrientation="portrait"
             android:theme="@style/Theme_Activity_Animation" />
-         <activity android:name="com.android.androidframework.ui.commodity.ConditionDialog_"
+        <activity
+            android:name="com.android.androidframework.ui.commodity.ConditionDialog_"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
-
     </application>
 
 </manifest>

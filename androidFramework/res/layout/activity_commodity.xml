@@ -1,102 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true" >
+    android:layout_height="match_parent" >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/gray_background"
-        android:orientation="vertical" >
+        android:fillViewport="true" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white" >
+            android:layout_height="match_parent"
+            android:background="@color/gray_background"
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/shape_border" >
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
 
-                <EditText
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:hint="IPhone 6plus"
-                    android:padding="5dp" />
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_border" >
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/selector_search_btn"
-                    android:text="搜索"
-                    android:textColor="@color/white" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="IPhone 6plus"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_search_btn"
+                        android:text="搜索"
+                        android:textColor="@color/white" />
+                </LinearLayout>
             </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <RadioButton
+                    android:id="@+id/rb_sell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="销量"
+                    android:textColor="@drawable/selector_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/rb_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="价格"
+                    android:textColor="@drawable/selector_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/rb_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="上市时间"
+                    android:textColor="@drawable/selector_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/rb_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="筛选"
+                    android:textColor="@drawable/selector_textcolor" />
+            </RadioGroup>
+
+            <com.android.androidframework.ui.view.MyGridView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:scrollbarStyle="@null" />
         </LinearLayout>
-
-        <RadioGroup
-            android:id="@+id/rg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            android:padding="10dp" >
-
-            <RadioButton
-                android:id="@+id/rb_sell"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:gravity="center"
-                android:text="销量"
-                android:textColor="@drawable/selector_textcolor" />
-
-            <RadioButton
-                android:id="@+id/rb_price"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:gravity="center"
-                android:text="价格"
-                android:textColor="@drawable/selector_textcolor" />
-
-            <RadioButton
-                android:id="@+id/rb_time"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:gravity="center"
-                android:text="上市时间"
-                android:textColor="@drawable/selector_textcolor" />
-
-            <RadioButton
-                android:id="@+id/rb_condition"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:gravity="center"
-                android:text="筛选"
-                android:textColor="@drawable/selector_textcolor" />
-        </RadioGroup>
-
-        <com.android.androidframework.ui.view.MyGridView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:numColumns="2"
-            android:id="@+id/gv"
-            android:padding="10dp"
-            android:scrollbarStyle="@null"
-            android:background="@color/white" />
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+	<ProgressBar 
+	    android:id="@+id/progress"
+	    android:layout_centerInParent="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+</RelativeLayout>

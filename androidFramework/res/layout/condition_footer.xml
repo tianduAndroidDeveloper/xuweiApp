@@ -22,6 +22,7 @@
             android:clickable="true"
             android:gravity="center"
             android:padding="10dp"
+            android:textColor="@color/black"
             android:text="清空条件" />
 
         <TextView
@@ -33,6 +34,7 @@
             android:clickable="true"
             android:gravity="center"
             android:padding="10dp"
+            android:textColor="@color/black"
             android:text="确定筛选" />
     </LinearLayout>
 
@@ -55,7 +57,6 @@
             android:id="@+id/lg_condition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
             android:orientation="vertical" />
     </LinearLayout>
 

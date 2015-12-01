@@ -2,16 +2,17 @@ package com.android.androidframework.ui.member;
 
 import org.androidannotations.annotations.EActivity;
 
+
 import com.android.androidframework.actionbar.MainActionBarActivity;
 import com.android.androidframework.ui.member.order.OrderActivity_;
 import com.xuwei.app.R;
 
 import android.app.Activity;
-import android.view.View;
+import android.view.View;  
 @EActivity(R.layout.memeber_center_layout)
 public class MemberCenterActivity extends MainActionBarActivity {
 
-	
+	  
 	@Override
 	public void backButtonClick(View v) {
 		// TODO Auto-generated method stub

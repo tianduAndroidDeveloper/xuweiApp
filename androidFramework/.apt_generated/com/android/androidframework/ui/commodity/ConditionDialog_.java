@@ -71,8 +71,8 @@ public final class ConditionDialog_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        lv_condition = ((ListView) hasViews.findViewById(id.lv_condition));
         rg_condition = ((RadioGroup) hasViews.findViewById(id.rg_condition));
+        lv_condition = ((ListView) hasViews.findViewById(id.lv_condition));
         initUI();
     }
 

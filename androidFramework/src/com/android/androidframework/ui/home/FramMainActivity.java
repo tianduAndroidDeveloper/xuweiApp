@@ -27,14 +27,14 @@ import com.android.androidframework.net.RequestAdapter.RequestMethod;
 import com.android.androidframework.net.RequestAdapter.RequestType;
 import com.android.androidframework.net.ResponseData;
 import com.android.androidframework.ui.member.order.OrderActivity_;
-
+  
 @EActivity(R.layout.home_main_activity)
 public class FramMainActivity extends MainActionBarActivity {
 	static String tag = "FramMainActivity";
 	@ViewById(android.R.id.tabhost)
 	TabHost tabHost;
 	@ViewById(R.id.home_main_pager)
-	ViewPager mainPager;
+	ViewPager mainPager;  
 
 	HomeMainAdapter pageAdapter;
 	ArrayList<FragmentInfo> fInfo;

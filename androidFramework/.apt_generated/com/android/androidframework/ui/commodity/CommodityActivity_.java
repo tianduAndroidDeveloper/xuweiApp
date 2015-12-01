@@ -82,38 +82,9 @@ public final class CommodityActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        gv = ((MyGridView) hasViews.findViewById(id.gv));
         rg = ((RadioGroup) hasViews.findViewById(id.rg));
-        {
-            View view = hasViews.findViewById(id.rb_price);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.priceSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_time);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.timeSort();
-                    }
-
-                }
-                );
-            }
-        }
+        progress = ((View) hasViews.findViewById(id.progress));
+        gv = ((MyGridView) hasViews.findViewById(id.gv));
         {
             View view = hasViews.findViewById(id.rb_condition);
             if (view!= null) {
@@ -138,6 +109,36 @@ public final class CommodityActivity_
                     @Override
                     public void onClick(View view) {
                         CommodityActivity_.this.sellSort();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(id.rb_price);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        CommodityActivity_.this.priceSort();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = hasViews.findViewById(id.rb_time);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        CommodityActivity_.this.timeSort();
                     }
 
                 }
