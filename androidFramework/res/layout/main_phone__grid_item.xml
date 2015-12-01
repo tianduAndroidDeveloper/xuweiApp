@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/proimg2_04" />
+
+        <TextView
+            android:layout_toRightOf="@id/phone_image"
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iphone 6s(1700) 银色" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_toRightOf="@id/phone_image"
+            android:layout_below="@id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="国行银色16GB苹果6S" />
+
+        <TextView 
+            android:layout_toRightOf="@id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_price"
+            android:layout_below="@id/product_description"
+            android:text="￥3555.0"/>
+        <TextView 
+            android:id="@+id/product_market_price"
+            android:layout_toRightOf="@id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥9999.0"
+            android:layout_alignBaseline="@id/product_price"
+            android:textColor="#222222"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_below="@id/product_price"
+            android:layout_toRightOf="@id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_bg_bc"
+            android:text="新品特价"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:src="@drawable/hot_tag" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

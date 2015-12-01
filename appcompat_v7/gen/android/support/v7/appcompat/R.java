@@ -858,10 +858,15 @@ containing a value of this type.
         public static int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static int abc_search_url_text_holo=0x7f070003;
+        public static int abc_search_url_text_holo=0x7f070008;
         public static int abc_search_url_text_normal=0x7f070000;
         public static int abc_search_url_text_pressed=0x7f070002;
         public static int abc_search_url_text_selected=0x7f070001;
+        public static int all=0x7f070007;
+        public static int blue=0x7f070005;
+        public static int qian=0x7f070006;
+        public static int red=0x7f070003;
+        public static int white=0x7f070004;
     }
     public static final class dimen {
         /**  Default height of an action bar. 

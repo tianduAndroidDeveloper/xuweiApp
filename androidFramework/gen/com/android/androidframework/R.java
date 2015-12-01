@@ -862,10 +862,15 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f070008;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int all=0x7f070007;
+        public static final int blue=0x7f070005;
+        public static final int qian=0x7f070006;
+        public static final int red=0x7f070003;
+        public static final int white=0x7f070004;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1081,12 +1086,45 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int back_b=0x7f020057;
-        public static final int back_h=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
-        public static final int icon_me_normal=0x7f02005a;
-        public static final int icon_me_selected=0x7f02005b;
-        public static final int me_tab_selector=0x7f02005c;
+        public static final int adver_02=0x7f020057;
+        public static final int back_b=0x7f020058;
+        public static final int back_h=0x7f020059;
+        public static final int bg_edittext_normal=0x7f02005a;
+        public static final int column_03=0x7f02005b;
+        public static final int column_05=0x7f02005c;
+        public static final int column_07=0x7f02005d;
+        public static final int column_09=0x7f02005e;
+        public static final int column_15=0x7f02005f;
+        public static final int column_16=0x7f020060;
+        public static final int column_17=0x7f020061;
+        public static final int column_18=0x7f020062;
+        public static final int hot_tag=0x7f020063;
+        public static final int ic_launcher=0x7f020064;
+        public static final int icon_empty=0x7f020065;
+        public static final int icon_error=0x7f020066;
+        public static final int icon_me_normal=0x7f020067;
+        public static final int icon_me_selected=0x7f020068;
+        public static final int icon_point=0x7f020069;
+        public static final int icon_point_pre=0x7f02006a;
+        public static final int icon_stub=0x7f02006b;
+        public static final int inproimgs_01=0x7f02006c;
+        public static final int liner_bg_bc=0x7f02006d;
+        public static final int me_tab_selector=0x7f02006e;
+        public static final int mobercov_02=0x7f02006f;
+        public static final int mobercov_04=0x7f020070;
+        public static final int new_tag=0x7f020071;
+        public static final int opp_1=0x7f020072;
+        public static final int opp_2=0x7f020073;
+        public static final int opp_3=0x7f020074;
+        public static final int owl_0=0x7f020075;
+        public static final int proimg2_03=0x7f020076;
+        public static final int proimg2_04=0x7f020077;
+        public static final int sale_tag=0x7f020078;
+        public static final int search=0x7f020079;
+        public static final int smallicon_03=0x7f02007a;
+        public static final int smallicon_06=0x7f02007b;
+        public static final int tui_tag=0x7f02007c;
+        public static final int tv_bg_bc=0x7f02007d;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1100,10 +1138,10 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050043;
+        public static final int action_settings=0x7f05005c;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
-        public static final int badgeView=0x7f050042;
+        public static final int badgeView=0x7f050057;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
@@ -1115,25 +1153,45 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int first_phone=0x7f050043;
+        public static final int fragment_cycle_viewpager_content=0x7f05004b;
+        public static final int fragment_lin=0x7f05003c;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
-        public static final int home_main_pager=0x7f05003c;
+        public static final int home_main_pager=0x7f05004a;
+        public static final int hot_product=0x7f050046;
+        public static final int hot_product_name=0x7f050047;
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView=0x7f050041;
-        public static final int leftBtn=0x7f05003e;
+        public static final int imageView=0x7f050056;
+        public static final int image_indicator=0x7f05005b;
+        public static final int image_tag=0x7f050054;
+        public static final int layout_viewager_content=0x7f050058;
+        public static final int layout_viewpager_indicator=0x7f05005a;
+        public static final int leftBtn=0x7f05004d;
+        public static final int line_phone=0x7f050055;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int main_gridview=0x7f050040;
+        public static final int main_phone_gridview=0x7f050048;
         public static final int middle=0x7f050012;
+        public static final int more_hot=0x7f050042;
+        public static final int name=0x7f050049;
         public static final int never=0x7f050009;
+        public static final int new_product=0x7f050044;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int phone_image=0x7f050050;
+        public static final int product_description=0x7f050051;
+        public static final int product_market_price=0x7f050053;
+        public static final int product_name=0x7f050045;
+        public static final int product_price=0x7f050052;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
-        public static final int rightBtn=0x7f050040;
-        public static final int rl=0x7f05003d;
+        public static final int rightBtn=0x7f05004f;
+        public static final int rl=0x7f05004c;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1144,6 +1202,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int sercher_content=0x7f05003d;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1152,10 +1211,14 @@ containing a value of this type.
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
-        public static final int titleBtn=0x7f05003f;
+        public static final int titleBtn=0x7f05004e;
         public static final int top_action_bar=0x7f050020;
+        public static final int tv_location=0x7f05003e;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
+        public static final int viewPager=0x7f050059;
+        public static final int view_pager=0x7f05003f;
+        public static final int view_pager2=0x7f050041;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1209,10 +1272,16 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int home_main_activity=0x7f030019;
-        public static final int main_action_bar=0x7f03001a;
-        public static final int main_tab_view=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int grid_item=0x7f030019;
+        public static final int home_main_activity=0x7f03001a;
+        public static final int lunbo_fragment=0x7f03001b;
+        public static final int main_action_bar=0x7f03001c;
+        public static final int main_phone__grid_item=0x7f03001d;
+        public static final int main_tab_view=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int view_banner=0x7f030020;
+        public static final int view_cycle_viewpager_contet=0x7f030021;
+        public static final int view_cycle_viewpager_indicator=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -2629,7 +2698,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01010435
+            0x0101012f, 0x01010130, 0x01010131, 0x0101041a
         };
         /**
           <p>
