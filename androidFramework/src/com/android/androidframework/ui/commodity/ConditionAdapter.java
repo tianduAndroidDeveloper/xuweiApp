@@ -1,29 +1,50 @@
 package com.android.androidframework.ui.commodity;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.xuwei.app.R;
 
-
 public class ConditionAdapter extends BaseAdapter {
+	private static final String TAG = "ConditionAdapter";
 	Context mContext;
-	String[] mConditions;
+	JSONObject mConditions;
 	Callback mCallback;
+	JSONArray dataList;
+	String index;
 
-	public ConditionAdapter(Context context, String[] conditions, Callback callback) {
+	public ConditionAdapter(Context context, String conditions, Callback callback) {
 		this.mContext = context;
-		this.mConditions = conditions;
+		Log.i(TAG, conditions);
 		this.mCallback = callback;
+		try {
+			mConditions = new JSONObject(conditions);
+			index = String.valueOf(mConditions.optInt("Index"));
+			dataList = mConditions.optJSONArray("Filter");
+		} catch (JSONException e) {
+
+			try {
+				dataList = new JSONArray(conditions);
+			} catch (JSONException e1) {
+				e1.printStackTrace();
+			}
+		}
+
 	}
 
 	@Override
 	public int getCount() {
-		return mConditions.length;
+		return dataList == null ? 0 : dataList.length();
 	}
 
 	@Override
@@ -40,7 +61,10 @@ public class ConditionAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup arg2) {
 		if (convertView == null)
 			convertView = View.inflate(mContext, R.layout.item_condition2, null);
-		String condition = mConditions[position];
+		String condition = dataList.optJSONObject(position).optString("title");
+		final String id = String.valueOf(dataList.optJSONObject(position).optInt("id"));
+		convertView.setTag(dataList.optJSONObject(position));
+
 		TextView tv = (TextView) convertView.findViewById(R.id.tv_con);
 		tv.setText(condition);
 		tv.setTag(condition);
@@ -48,7 +72,8 @@ public class ConditionAdapter extends BaseAdapter {
 
 			@Override
 			public void onClick(View arg0) {
-				mCallback.callBack(String.valueOf(arg0.getTag()));
+				mCallback.callBack(String.valueOf(arg0.getTag()), index, id);
+				Log.i(TAG, "index = " + index + ",id = " + id);
 
 			}
 		});
@@ -56,7 +81,23 @@ public class ConditionAdapter extends BaseAdapter {
 	}
 
 	public interface Callback {
-		void callBack(String condition);
+		void callBack(String condition, String index, String value_id);
+	}
+
+	public void refresh(String string) {
+		try {
+			mConditions = new JSONObject(string);
+			dataList = mConditions.optJSONArray("Filter");
+		} catch (JSONException e) {
+
+			try {
+				dataList = new JSONArray(string);
+			} catch (JSONException e1) {
+				e1.printStackTrace();
+			}
+		}
+		this.notifyDataSetChanged();
+
 	}
 
 }

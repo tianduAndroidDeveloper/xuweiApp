@@ -10,26 +10,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.ListView;
 import android.widget.RadioGroup;
-import com.android.androidframework.ui.view.MyGridView;
 import com.xuwei.app.R.id;
 import com.xuwei.app.R.layout;
-import org.androidannotations.api.SdkVersionHelper;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
-public final class CommodityActivity_
-    extends CommodityActivity
+public final class ConditionDialog_
+    extends ConditionDialog
     implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
-    public final static String CATEGORY_ID_EXTRA = "category_id";
+    public final static String JSON_EXTRA = "json";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,7 +34,7 @@ public final class CommodityActivity_
         init_(savedInstanceState);
         super.onCreate(savedInstanceState);
         OnViewChangedNotifier.replaceNotifier(previousNotifier);
-        setContentView(layout.activity_commodity);
+        setContentView(layout.dialog_condition);
     }
 
     private void init_(Bundle savedInstanceState) {
@@ -64,95 +61,26 @@ public final class CommodityActivity_
         onViewChangedNotifier_.notifyViewChanged(this);
     }
 
-    public static CommodityActivity_.IntentBuilder_ intent(Context context) {
-        return new CommodityActivity_.IntentBuilder_(context);
+    public static ConditionDialog_.IntentBuilder_ intent(Context context) {
+        return new ConditionDialog_.IntentBuilder_(context);
     }
 
-    public static CommodityActivity_.IntentBuilder_ intent(Fragment supportFragment) {
-        return new CommodityActivity_.IntentBuilder_(supportFragment);
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (((SdkVersionHelper.getSdkInt()< 5)&&(keyCode == KeyEvent.KEYCODE_BACK))&&(event.getRepeatCount() == 0)) {
-            onBackPressed();
-        }
-        return super.onKeyDown(keyCode, event);
+    public static ConditionDialog_.IntentBuilder_ intent(Fragment supportFragment) {
+        return new ConditionDialog_.IntentBuilder_(supportFragment);
     }
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        rg = ((RadioGroup) hasViews.findViewById(id.rg));
-        progress = ((View) hasViews.findViewById(id.progress));
-        gv = ((MyGridView) hasViews.findViewById(id.gv));
-        {
-            View view = hasViews.findViewById(id.rb_price);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.priceSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_sell);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.sellSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_condition);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.conditionSort();
-                    }
-
-                }
-                );
-            }
-        }
-        {
-            View view = hasViews.findViewById(id.rb_time);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CommodityActivity_.this.timeSort();
-                    }
-
-                }
-                );
-            }
-        }
+        lv_condition = ((ListView) hasViews.findViewById(id.lv_condition));
+        rg_condition = ((RadioGroup) hasViews.findViewById(id.rg_condition));
         initUI();
     }
 
     private void injectExtras_() {
         Bundle extras_ = getIntent().getExtras();
         if (extras_!= null) {
-            if (extras_.containsKey(CATEGORY_ID_EXTRA)) {
-                category_id = extras_.getString(CATEGORY_ID_EXTRA);
+            if (extras_.containsKey(JSON_EXTRA)) {
+                json = extras_.getString(JSON_EXTRA);
             }
         }
     }
@@ -171,20 +99,20 @@ public final class CommodityActivity_
 
         public IntentBuilder_(Context context) {
             context_ = context;
-            intent_ = new Intent(context, CommodityActivity_.class);
+            intent_ = new Intent(context, ConditionDialog_.class);
         }
 
         public IntentBuilder_(Fragment fragment) {
             fragmentSupport_ = fragment;
             context_ = fragment.getActivity();
-            intent_ = new Intent(context_, CommodityActivity_.class);
+            intent_ = new Intent(context_, ConditionDialog_.class);
         }
 
         public Intent get() {
             return intent_;
         }
 
-        public CommodityActivity_.IntentBuilder_ flags(int flags) {
+        public ConditionDialog_.IntentBuilder_ flags(int flags) {
             intent_.setFlags(flags);
             return this;
         }
@@ -205,8 +133,8 @@ public final class CommodityActivity_
             }
         }
 
-        public CommodityActivity_.IntentBuilder_ category_id(String category_id) {
-            intent_.putExtra(CATEGORY_ID_EXTRA, category_id);
+        public ConditionDialog_.IntentBuilder_ json(String json) {
+            intent_.putExtra(JSON_EXTRA, json);
             return this;
         }
 

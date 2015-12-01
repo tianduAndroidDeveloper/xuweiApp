@@ -20,22 +20,30 @@ import android.widget.Toast;
 
 import com.xuwei.app.R;
 import com.android.androidframework.actionbar.MainActionBarActivity;
-
+import com.android.androidframework.net.ProgressMessage;
+import com.android.androidframework.net.RequestAdapter;
+import com.android.androidframework.net.RequestAdapter.RequestContentType;
+import com.android.androidframework.net.RequestAdapter.RequestMethod;
+import com.android.androidframework.net.RequestAdapter.RequestType;
+import com.android.androidframework.net.ResponseData;
+import com.android.androidframework.ui.member.order.OrderActivity_;
+  
 @EActivity(R.layout.home_main_activity)
 public class FramMainActivity extends MainActionBarActivity {
 	static String tag = "FramMainActivity";
 	@ViewById(android.R.id.tabhost)
 	TabHost tabHost;
 	@ViewById(R.id.home_main_pager)
-	ViewPager mainPager;
+	ViewPager mainPager;  
 
 	HomeMainAdapter pageAdapter;
 	ArrayList<FragmentInfo> fInfo;
 
 	@AfterInject
 	void initData() {
-		
+
 		fInfo = new ArrayList<FragmentInfo>();
+
 	}
 
 	@AfterViews
@@ -45,6 +53,7 @@ public class FramMainActivity extends MainActionBarActivity {
 		initTabHost();
 		initFragments();
 		begin();
+		
 	}
 
 	void initFragments() {
@@ -70,7 +79,7 @@ public class FramMainActivity extends MainActionBarActivity {
 		tabHost.addTab(getTabSpec("tab3", R.drawable.me_tab_selector, "tab3"));
 		tabHost.addTab(getTabSpec("tab4", R.drawable.me_tab_selector, "tab4"));
 		tabHost.setOnTabChangedListener(mainTabChange);
-		
+
 	}
 
 	private TabSpec getTabSpec(String content, int resId, String title) {
@@ -86,7 +95,7 @@ public class FramMainActivity extends MainActionBarActivity {
 		@Override
 		public void onPageSelected(int position) {
 			tabHost.setCurrentTab(position);
-			
+
 		}
 
 		@Override
@@ -115,8 +124,6 @@ public class FramMainActivity extends MainActionBarActivity {
 		mainPager.setCurrentItem(0);
 	}
 
-	
-
 	public void onBackPressed() {
 		if ((System.currentTimeMillis() - exitTime) > 2000) {
 			Toast.makeText(getApplicationContext(), "再按一次退出程序",
@@ -143,22 +150,29 @@ public class FramMainActivity extends MainActionBarActivity {
 		}
 	}
 
+	// 跳转到订单页面
+	public void skipOrder(View view) {
+
+		OrderActivity_.intent(this)
+				.type(Integer.parseInt(view.getTag().toString())).start();
+	}
+
 	@Override
 	public void backButtonClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void titleButtonClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void rightButtonClick(View v) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

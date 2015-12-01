@@ -147,7 +147,7 @@ public abstract class RequestAdapter implements Serializable {
 		return this;
 	}
 
-	final public RequestAdapter SetJSON(String json) {
+	final public RequestAdapter setJSON(String json) {
 		mJSON = json;
 		return this;
 	}

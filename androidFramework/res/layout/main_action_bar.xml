@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/rl" 
     android:gravity="center_vertical"
-    android:background="#ff0000">
+    android:background="@color/member_red_solid">
 
     <Button
         android:layout_marginLeft="15dp"
@@ -30,12 +30,12 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="15dp"
         android:id="@+id/rightBtn"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
         android:textColor="@android:color/black"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:visibility="gone" />
 
 </RelativeLayout>

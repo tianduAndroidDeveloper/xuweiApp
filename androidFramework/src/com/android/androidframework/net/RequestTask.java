@@ -251,8 +251,9 @@ public class RequestTask implements Runnable {
 		// httpPost.setHeader("Access-Control-Allow-Credentials", "true");
 		httpPost.setHeader("Accept", "application/json, text/plain, */*");
 		httpPost.setHeader("Connection", "keep-alive");
+		httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 		if (mRequestData.getContentType() == RequestContentType.eJSON) {
-			httpPost.setHeader("Content-Type", "application/json;charset=UTF-8");
+			//httpPost.setHeader("Content-Type", "application/json;charset=UTF-8");
 		} else if (mRequestData.getContentType() == RequestContentType.eImage) {
 			httpPost.setHeader("Content-Type", "image/jpeg");
 		}
