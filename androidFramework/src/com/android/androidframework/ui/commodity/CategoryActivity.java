@@ -3,6 +3,7 @@ package com.android.androidframework.ui.commodity;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -11,10 +12,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.androidframework.actionbar.MainActionBarActivity;
+import com.android.androidframework.net.ProgressMessage;
+import com.android.androidframework.net.RequestAdapter;
+import com.android.androidframework.net.RequestAdapter.RequestMethod;
+import com.android.androidframework.net.ResponseData;
 import com.xuwei.app.R;
 
 @EActivity(R.layout.activity_category)
 public class CategoryActivity extends MainActionBarActivity {
+	private static final String TAG = "CategoryActivity";
 	GridView gv;
 
 	@AfterViews
@@ -22,6 +28,23 @@ public class CategoryActivity extends MainActionBarActivity {
 		titleButton.setText("商品分类");
 		gv = (GridView) findViewById(R.id.gv);
 		gv.setAdapter(new MyGridViewAdapter());
+		requestLeft();
+	}
+
+	void requestLeft() {
+		new RequestAdapter() {
+			
+			@Override
+			public void onReponse(ResponseData data) {
+				Log.i(TAG, data.toString());
+			}
+			
+			@Override
+			public void onProgress(ProgressMessage msg) {
+				// TODO Auto-generated method stub
+				
+			}
+		}.setUrl(getString(R.string.url_loadProductCategorys)).setRequestMethod(RequestMethod.eGet).notifyRequest();
 	}
 
 	class MyGridViewAdapter extends BaseAdapter {

@@ -97,21 +97,85 @@
 
         <LinearLayout
             android:id="@+id/first_phone"
+            android:background="@color/white"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/mobercov_02"
             android:orientation="horizontal"
-            android:paddingTop="10dp" />
+            android:paddingTop="10dp" >
+            
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="26sp"
+                    android:text="小米Note"/>
+                
+                 <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="大屏旗舰 HIFi 双待"/>
+                 
+                  <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/tv_bg2_bc"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="立即购买"/>
+                 
+                </LinearLayout>
+                
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/phone"/>
+            
+            </LinearLayout>
 
         <LinearLayout
             android:id="@+id/first_phone"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/mobercov_04"
+            android:background="@color/white"
             android:orientation="horizontal"
-            android:paddingTop="10dp" />
+            android:paddingTop="10dp" >
+            
+             <ImageView android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/phone2"/>
+            
+             <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="26sp"
+                    android:text="Iphone 6 S"/>
+                
+                 <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="唯一的不同，是处处都不同"/>
+                 
+                  <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/tv_bg2_bc"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="立即购买"/>
+                 
+                </LinearLayout>
+                
+           
+            
+            </LinearLayout>
 
         <!--
      <LinearLayout android:layout_height="wrap_content"

@@ -8,16 +8,40 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于读取手机当前的状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-    <application
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    
+    
+<application
         android:name="com.android.androidframework.MyApplication_"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+    <meta-data android:name="com.amap.api.v2.apikey" android:value="7cf526b2332ca9aedcf9ac28f83bbcbc">    
+    </meta-data>    
+    
         <activity
             android:name="com.android.androidframework.ui.home.FramMainActivity_"
             android:label="@string/app_name"
@@ -60,6 +84,22 @@
             android:name="com.android.androidframework.ui.commodity.ConditionDialog_"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.android.androidframework.ui.member.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.member.FindPswActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.member.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.android.androidframework.ui.commodity.CommodityDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
     </application>
 
 </manifest>

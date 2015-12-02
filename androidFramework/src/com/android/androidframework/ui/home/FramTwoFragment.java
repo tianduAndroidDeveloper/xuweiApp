@@ -15,6 +15,8 @@ import android.widget.Button;
 
 import com.android.androidframework.ui.commodity.CategoryActivity_;
 import com.android.androidframework.ui.commodity.CommodityActivity_;
+import com.android.androidframework.ui.commodity.CommodityDetailActivity_;
+import com.android.androidframework.ui.member.LoginActivity_;
 
 @EFragment()
 public class FramTwoFragment extends Fragment implements OnClickListener {
@@ -39,8 +41,12 @@ public class FramTwoFragment extends Fragment implements OnClickListener {
 	void init() {
 		Button btn = (Button) rootView.findViewById(R.id.btn);
 		Button btn2 = (Button) rootView.findViewById(R.id.btn2);
+		Button btn3 = (Button) rootView.findViewById(R.id.btn3);
+		Button btn4 = (Button) rootView.findViewById(R.id.btn4);
 		btn.setOnClickListener(this);
 		btn2.setOnClickListener(this);
+		btn3.setOnClickListener(this);
+		btn4.setOnClickListener(this);
 	}
 
 	@Override
@@ -51,6 +57,12 @@ public class FramTwoFragment extends Fragment implements OnClickListener {
 			break;
 		case R.id.btn2:
 			CategoryActivity_.intent(mContext).start();
+			break;
+		case R.id.btn3:
+			LoginActivity_.intent(mContext).start();
+			break;
+		case R.id.btn4:
+			CommodityDetailActivity_.intent(mContext).start();
 			break;
 		default:
 			break;

@@ -21,6 +21,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
 
+import com.amap.api.location.AMapLocationListener;
 import com.android.androidframework.bean.PhoneBean;
 import com.android.androidframework.utils.ImagePagerAdapter;
 import com.xuwei.app.R;
@@ -33,6 +34,8 @@ public class FramOneFragment extends Fragment {
 	AutoScrollViewPager viewpager;
 	private AutoScrollViewPager viewPager, viewPager2;
 	private List<Integer> imageIdList, imageIdList2;
+	//声明AMapLocationClient类对象
+	public AMapLocationClient mLocationClient = null;
 
 	// FrameLayout fragment_cycle_viewpager_content;
 	@Override
@@ -50,6 +53,15 @@ public class FramOneFragment extends Fragment {
 		setMenu();
 		setIMageLunbo();
 		setGridView();
+		
+		
+		
+		//声明定位回调监听器
+		AMapLocationListener mLocationListener = null;
+		//初始化定位
+		mLocationClient = new AMapLocationClient(getActivity().getApplicationContext());
+		//设置定位回调监听
+		mlocationClient.setLocationListener(mLocationListener);
 
 		return rootView;
 	}

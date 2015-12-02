@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="手机号码/邮箱/用户名"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_register"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_data"
+        android:text="注册账号"
+        android:textColor="@color/red"/>
+    <TextView 
+        android:id="@+id/tv_find"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_data"
+        android:text="忘记密码"
+        android:textColor="@color/red"/>
+
+</RelativeLayout>

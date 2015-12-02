@@ -19,6 +19,7 @@ import android.widget.TabHost.TabSpec;
 import android.widget.Toast;
 
 import com.xuwei.app.R;
+import com.amap.api.location.AMapLocationListener;
 import com.android.androidframework.actionbar.MainActionBarActivity;
 import com.android.androidframework.net.ProgressMessage;
 import com.android.androidframework.net.RequestAdapter;
@@ -43,13 +44,13 @@ public class FramMainActivity extends MainActionBarActivity {
 	void initData() {
 
 		fInfo = new ArrayList<FragmentInfo>();
-
+	
 	}
 
 	@AfterViews
 	void initUI() {
-		backButton.setVisibility(View.INVISIBLE);
-		titleButton.setText("主页展示");
+		//backButton.setVisibility(View.INVISIBLE);
+		//titleButton.setText("主页展示");
 		initTabHost();
 		initFragments();
 		begin();
